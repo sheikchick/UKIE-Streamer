@@ -1057,6 +1057,8 @@ function writeScoreboard() {
     const texts = {
         p1Name: p1NameInp.value,
         p2Name: p2NameInp.value,
+        p1Tag: p1TagInp.value,
+        p2Tag: p2TagInp.value,
         round: roundInp.value,
         tournamentName: document.getElementById('tournamentName').value,
         caster1Name: document.getElementById('cName1').value,
@@ -1084,6 +1086,9 @@ function writeScoreboard() {
     //simple .txt files
     fs.writeFile(textPath + "/Simple Texts/Player 1.txt", texts.p1Name, noop);
     fs.writeFile(textPath + "/Simple Texts/Player 2.txt", texts.p2Name, noop);
+
+    fs.writeFile(textPath + "/Simple Texts/Player 1 Team.txt", texts.p1Tag, noop);
+    fs.writeFile(textPath + "/Simple Texts/Player 2 Team.txt", texts.p2Tag, noop);
 
     fs.writeFile(textPath + "/Simple Texts/Round.txt", texts.round, noop);
     fs.writeFile(textPath + "/Simple Texts/Tournament Name.txt", texts.tournamentName, noop);
