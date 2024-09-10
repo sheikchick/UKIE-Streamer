@@ -1,0 +1,192 @@
+
+@font-face {
+	font-family: hectic;
+	src: url("../fonts/hectic.ttf");
+	font-style: normal;
+}
+@font-face {
+	font-family: coastal;
+	src: url("../fonts/Coastal-Hand.ttf");
+	font-style: normal;
+}
+@font-face {
+	font-family: coastal;
+	src: url("../fonts/Coastal-HandOblique.ttf");
+	font-style: italic;
+}
+
+.visible {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.5s linear;
+}
+
+.hidden {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+
+#p1bf,
+#p2bf {
+    opacity: 0;
+}
+
+html {
+	overflow: hidden;
+	font-size: 60px;
+	font-family: "hectic";
+	color: #000;
+}
+
+body {
+	margin: 0px;
+	background-repeat: no-repeat;
+    overflow: visible !important;   /*screw you OBS*/
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.background {
+	z-index: 0;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.foreground {
+	z-index: 0;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 428px 432px 200px 432px 428px;
+}
+
+.side {
+    z-index: 2;
+    margin-top: 828px;
+}
+
+#left-side {
+    grid-column: 1;
+}
+
+#top {
+    z-index: 2;
+    margin-top: 14px;
+    grid-column: 3;
+}
+
+#right-side {
+    grid-column: 5;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-line {
+    display: flex;
+}
+
+.tag.wrapper {
+    display: flex;
+    width: 245px;
+    height: 60px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#player1-tag-wrapper {
+    float: left;
+}
+
+#player2-tag-wrapper {
+    float: right;
+}
+
+.round.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 80px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#player1 {
+    transform: rotate(-5.7deg); /*two cassettes are slightly different*/
+}
+
+#player2 {
+    transform: rotate(8.1deg); /*two cassettes are slightly different*/
+}
+
+.player-tag {
+    font-family: "hectic";
+}
+
+#player1-tag {
+    margin-left: 42px;
+}
+
+#player1-flag {
+    float: right;
+    margin-right: 10px;
+}
+
+#player2-flag {
+    float: left;
+}
+
+.score {
+    position: absolute;
+    font-family: "coastal";
+    font-size: 80px;
+    margin: 0 32px;
+}
+
+.round {
+    font-family: "hectic";
+    font-size: 26px;
+}
+
+.bestof {
+    font-size: 20px;
+}
+
+.pronouns {
+    font-family: "coastal";
+    font-style: italic;
+    font-size: 27px;
+}
+
+#player1-pronouns {
+    margin-left: -18px; /*two cassettes are slightly different*/
+}
+
+.pronouns.wrapper {
+    margin-top: 53px;
+}
+
+
+#player1>.score {
+    top: 50px;
+    left: 266px;
+}
+
+#player2>.score {
+    top: 50px;
+    left: -6px;
+}

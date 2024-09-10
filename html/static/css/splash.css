@@ -1,0 +1,163 @@
+
+@font-face {
+	font-family: hectic;
+	src: url("../fonts/hectic.ttf");
+	font-style: normal;
+}
+@font-face {
+	font-family: coastal;
+	src: url("../fonts/Coastal-Hand.ttf");
+	font-style: normal;
+}
+@font-face {
+	font-family: coastal;
+	src: url("../fonts/Coastal-HandOblique.ttf");
+	font-style: italic;
+}
+@font-face {
+	font-family: ballpoint;
+	src: url("../fonts/BallpointSignature.otf");
+	font-style: normal;
+}
+
+.visible {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.5s linear;
+}
+
+.hidden {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+
+html {
+	overflow: hidden;
+	font-size: 60px;
+	font-family: "ballpoint";
+	color: #4e2454;
+}
+
+body {
+	margin: 0px;
+	background-repeat: no-repeat;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.background {
+	z-index: 0;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.foreground {
+	z-index: 0;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 285px 498px 423px 498px 216px;
+}
+
+.side {
+    z-index: 2;
+    margin-top: 680px;
+}
+
+#left-side {
+    grid-column: 2;
+}
+
+#right-side {
+    grid-column: 4;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tag.wrapper {
+    position: absolute;
+    margin-top: 20px;
+    display: flex;
+    width: 280px;
+    height: 60px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.round.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 80px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.player-tag {
+    font-family: "ballpoint";
+}
+
+.bestof {
+    font-size: 20px;
+}
+
+.pronouns {
+    font-family: "ballpoint";
+    font-size: 27px;
+}
+
+.pronouns.wrapper {
+    margin: 0 70px;
+}
+
+#player1>.pronouns.wrapper {
+    align-self: flex-start;
+}
+
+#player2>.pronouns.wrapper {
+    align-self: flex-end;
+}
+
+#player1>.score {
+    top: 50px;
+    left: 266px;
+}
+
+#player2>.score {
+    top: 50px;
+    left: -6px;
+}
+
+.setdata {
+    font-family: "hectic";
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    grid-column: 4;
+    align-items: flex-end;
+    margin-top: 220px;
+    width: 700px;
+}
+
+#round {
+    font-size: 32px;
+}
+
+#info {
+    font-size: 42px;
+}

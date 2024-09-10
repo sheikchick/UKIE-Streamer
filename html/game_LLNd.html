@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html style="font-size: 40px;">
+
+<head>
+	<title>Long Live Netplay</title>
+	<script src="static/scripts/jquery-3.4.1.min.js"></script>
+	<script src="static/scripts/gsap-3.12.5.min.js"></script>
+	<script src="static/scripts/common.js"></script>
+	<script src="static/scripts/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="static/css/common.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+</head>
+
+<body>
+	<img class="background" id="p1bg" src="static/img/background/left/red.png">
+	<img class="background" id="p2bg" src="static/img/background/right/blue.png">
+
+	<img class="background" id="p1bf" src="static/img/background/left/red.png">
+	<img class="background" id="p2bf" src="static/img/background/right/blue.png">
+
+	<img class="foreground" src="static/img/game_overlay.png">
+
+
+	<div class="main">
+		<div class="side" id="left-side">
+			<div class="player" id="player1">
+				<div class="top-line">
+					<div class="tag wrapper">
+						<span id="player1-tag" class="player-tag">c:leo</span>
+					</div>
+					<img id="player1-flag" class="flag" src="static/flags/uk.png">
+				</div>
+				<div class="pronouns wrapper">
+					<span id="player1-pronouns" class="player-pronouns"></span>
+				</div>
+				<div class="score wrapper">
+					<span id="player1-score" class="score">0</span>
+				</div>
+			</div>
+		</div>
+		<div class="top" id="top">
+			<div class="round wrapper">
+				<span id="round" class="round">Winners Quarter Final</span>
+				<span id="bestof" class="bestof">Best of 5</span>
+			</div>
+		</div>
+		<div class="side" id="right-side">
+			<div class="player" id="player2">
+				<div class="tag wrapper">
+					<img id="player2-flag" class="flag" src="static/flags/uk.png">
+					<span id="player2-tag" class="player-tag">Glaikit</span>
+				</div>
+				<div class="pronouns wrapper">
+					<span id="player2-pronouns" class="player-pronouns"></span>
+				</div>
+				<div class="score wrapper">
+					<span id="player2-score" class="score">0</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
