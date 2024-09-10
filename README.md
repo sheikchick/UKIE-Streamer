@@ -1,6 +1,6 @@
 ![preview](doc/full_window.png)
 
-# Melee Ghost Streamer
+# UKIE Streamer
 
 A fork of [Sheepolution's Melee Ghost Streamer](https://github.com/Sheepolution/Melee-Ghost-Streamer) which is a fork of [Readek's Melee Stream Tool](https://github.com/Readek/Melee-Stream-Tool) with updated features and reduced scope, designed for ease of use for streaming UKIE Netplay tournaments.
 
